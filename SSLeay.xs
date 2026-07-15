@@ -7970,15 +7970,9 @@ X509_VERIFY_PARAM_set_hostflags(param, flags)
     X509_VERIFY_PARAM *param
     unsigned int flags
 
-#endif
-
-#if OPENSSL_VERSION_NUMBER >= 0x1010000fL && !defined(LIBRESSL_VERSION_NUMBER) /* OpenSSL 1.1.0 */
-
 unsigned int
 X509_VERIFY_PARAM_get_hostflags(param)
     X509_VERIFY_PARAM *param
-
-#endif
 
 char *
 X509_VERIFY_PARAM_get0_peername(param)
